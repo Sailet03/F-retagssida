@@ -8,25 +8,31 @@
   width: 100vw;
   min-height: 100vw;
   display: grid;
-  grid-template-columns: 15vw auto;
+  grid-template-columns: 15% 85%;
   grid-template-rows: 8.95vw auto 5vw;
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
 }
 body {
-  overflow-x: hidden;
+  /*overflow-x: hiden;*/
+  width: 100vw;
 }
 header {
   grid-column: 1 / 3;
   background-color: var(--medium-red);
 }
+header ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
 header li {
   list-style: none;
-  display: inline;
+  font-size: 13vh;
 }
 header li .logga {
   width: 15vw;
@@ -39,21 +45,21 @@ main a {
   align-items: center;
   text-decoration: none;
   color: var(--grey);
-  font-size: 15vh;
+  font-size: 10vh;
 }
 .grid2 {
   width: auto;
   min-height: auto;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 35vh 35vh 35vh 35vh auto;
+  grid-template-rows: 25vh 25vh 25vh 25vh auto;
 }
 .grid3 {
   outline: auto;
   outline-color: var(--dark-orange);
   display: grid;
-  grid-template-columns: 49.5% 49%;
-  grid-template-rows:100%;
+  grid-template-columns: 49% 49% 2%;
+  grid-template-rows: 100%;
 }
 .grid3 .a {
   display: flex;
@@ -62,10 +68,23 @@ main a {
 .grid3 img {
   height: 100%;
 }
+.grid4 {
+  display: grid;
+  grid-template-rows: 15% auto;
+}
 aside {
   background-color: var(--dark-orange);
   outline: auto;
   outline-color: var(--dark-orange);
+}
+aside a {
+  text-decoration: none;
+  color: var(--grey);
+  font-size: 5vh;
+}
+aside a:hover {
+  font-size: 5vh;
+  text-decoration: underline;
 }
 footer {
   grid-column: 1 / 3;
