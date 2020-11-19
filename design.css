@@ -34,15 +34,38 @@ header li .logga {
 main {
   background-color: var(--orange);
 }
+main a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--grey);
+  font-size: 15vh;
+}
 .grid2 {
   width: auto;
   min-height: auto;
   display: grid;
-  grid-template-columns: 20vh auto;
-  grid-template-rows: 20vh 20vh 20vh 20vh auto ;
+  grid-template-columns: 100%;
+  grid-template-rows: 35vh 35vh 35vh 35vh auto;
+}
+.grid3 {
+  outline: auto;
+  outline-color: var(--dark-orange);
+  display: grid;
+  grid-template-columns: 49.5% 49%;
+  grid-template-rows:100%;
+}
+.grid3 .a {
+  display: flex;
+  justify-content: flex-end;
+}
+.grid3 img {
+  height: 100%;
 }
 aside {
   background-color: var(--dark-orange);
+  outline: auto;
+  outline-color: var(--dark-orange);
 }
 footer {
   grid-column: 1 / 3;
