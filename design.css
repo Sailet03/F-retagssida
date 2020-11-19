@@ -11,6 +11,7 @@
   grid-template-columns: 15vw auto;
   grid-template-rows: 8.95vw auto 5vw;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -32,6 +33,13 @@ header li .logga {
 }
 main {
   background-color: var(--orange);
+}
+.grid2 {
+  width: auto;
+  min-height: auto;
+  display: grid;
+  grid-template-columns: 20vh auto;
+  grid-template-rows: 20vh 20vh 20vh 20vh auto ;
 }
 aside {
   background-color: var(--dark-orange);
