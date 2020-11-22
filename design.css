@@ -1,24 +1,16 @@
 :root {
   --medium-red: #d00000;
   --orange: #ffba08;
-  --grey: rgb(0, 0, 0);
+  --black: rgb(0, 0, 0);
   --dark-orange: #f48c06;
+  --grey: rgb(122, 117, 117);
 }
-.grid {
-  width: 100vw;
-  min-height: 100vw;
-  display: grid;
-  grid-template-columns: 15% 85%;
-  grid-template-rows: 8.95vw auto 5vw;
-}
-
 * {
   margin: 0;
   padding: 0;
-  /*box-sizing: border-box;*/
 }
 body {
-  /*overflow-x: hiden;*/
+  overflow-x: hiden;
   width: 100vw;
 }
 header {
@@ -44,33 +36,61 @@ main a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: var(--grey);
+  color: var(--black);
   font-size: 10vh;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 15vw 85vw;
+  grid-template-rows: 18vh auto 5vh;
 }
 .grid2 {
   width: auto;
   min-height: auto;
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 25vh 25vh 25vh 25vh auto;
+  grid-template-columns: 99%;
+  grid-template-rows: 25vh 25vh 25vh 25vh 25vh;
 }
 .grid3 {
   outline: auto;
   outline-color: var(--dark-orange);
   display: grid;
-  grid-template-columns: 49% 49% 2%;
+  grid-template-columns: 50% 50%;
   grid-template-rows: 100%;
+}
+.grid3 img {
+  height: 100%;
 }
 .grid3 .a {
   display: flex;
   justify-content: flex-end;
 }
-.grid3 img {
-  height: 100%;
-}
 .grid4 {
   display: grid;
-  grid-template-rows: 15% auto;
+  grid-template-rows: 15% 85%;
+  grid-template-columns: 99%;
+}
+.grid5 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+.grid5 img {
+  height: 100%;
+}
+.grid5 a {
+  display: flex;
+  justify-content: center;
+  outline: auto;
+  outline-color: var(--dark-orange);
+}
+.grid6 {
+  display: grid;
+  grid-template-columns: 15vw 85vw;
+  grid-template-rows: 18vh 77vh 5vh;
+}
+.grid6 a {
+  display: flex;
 }
 aside {
   background-color: var(--dark-orange);
@@ -79,7 +99,7 @@ aside {
 }
 aside a {
   text-decoration: none;
-  color: var(--grey);
+  color: var(--black);
   font-size: 5vh;
 }
 aside a:hover {
@@ -88,7 +108,7 @@ aside a:hover {
 }
 footer {
   grid-column: 1 / 3;
-  background-color: var(--grey);
+  background-color: var(--black);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -100,4 +120,16 @@ footer ul {
   flex-direction: row;
   list-style: none;
   color: var(--medium-red);
+}
+::-webkit-scrollbar {
+  width: 0.7vw;
+}
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--black);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--grey);
 }
